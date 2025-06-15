@@ -5,8 +5,6 @@ const resultDiv = document.getElementById("result");
 const resetButton = document.getElementById("reset-btn");
 const scoreEl = document.querySelector(".score");
 const leagueEl = document.querySelector(".league");
-const computerMoveEl = document.getElementById("computer-move");
-const userMoveEl = document.getElementById("user-move");
 const roundResultEl = document.getElementById("round-result");
 
 const options = ["rock", "paper", "scissor"];
@@ -64,10 +62,7 @@ resetButton.addEventListener("click", () => {
   userWins = 0;
   computerWins = 0;
   roundCount = 1;
-  computerMoveEl.textContent = "";
-  userMoveEl.textContent = "";
   roundResultEl.textContent = "";
-  resultDiv.textContent = ""; // Clear result text
   scoreEl.textContent = `Round: ${roundCount} | You: 0 - Computer: 0`;
   leagueEl.textContent = "";
 });
