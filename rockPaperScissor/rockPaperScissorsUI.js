@@ -1,7 +1,6 @@
 "use strict";
 
 const buttons = document.querySelectorAll(".move-btn ");
-const resultDiv = document.getElementById("result");
 const resetButton = document.getElementById("reset-btn");
 const scoreEl = document.querySelector(".score");
 const leagueEl = document.querySelector(".league");
@@ -25,7 +24,6 @@ buttons.forEach((button) => {
 
     const userMove = button.dataset.move;
     const computerMove = options[randomInt];
-    let message = "";
 
     if (computerMove === userMove) {
       roundResultEl.textContent = "It's a DRAW!! 🤝";
