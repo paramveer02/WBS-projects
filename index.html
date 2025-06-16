@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game: Rock Paper Scissors</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="rockPaperScissorsUI.js"></script>
+  </head>
+  <body
+    class="bg-black text-gray-100 font-mono h-screen flex items-center justify-center"
+  >
+    <div
+      class="text-center space-y-6 mt-10 border-4 border-gray-500 p-8 rounded-xl shadow-xl bg-gray-900 max-w-lg w-full"
+    >
+      <h1 class="text-4xl font-extrabold text-silver tracking-widest">
+        ROCK PAPER SCISSORS
+      </h1>
+
+      <div class="flex justify-center gap-6">
+        <button
+          class="move-btn bg-gray-700 hover:bg-blue-500 transition text-white px-6 py-3 rounded shadow-lg uppercase tracking-wide border-2 border-blue-300"
+          data-move="rock"
+        >
+          Rock
+        </button>
+        <button
+          class="move-btn bg-gray-700 hover:bg-green-500 transition text-white px-6 py-3 rounded shadow-lg uppercase tracking-wide border-2 border-green-300"
+          data-move="paper"
+        >
+          Paper
+        </button>
+        <button
+          class="move-btn bg-gray-700 hover:bg-red-500 transition text-white px-6 py-3 rounded shadow-lg uppercase tracking-wide border-2 border-red-300"
+          data-move="scissor"
+        >
+          Scissor
+        </button>
+      </div>
+
+      <div id="result" class="space-y-2 mt-6">
+        <p id="computer-move" class="text-xl font-bold text-fuchsia-400"></p>
+        <p id="user-move" class="text-xl font-bold text-lime-400"></p>
+        <p id="round-result" class="text-lg font-semibold text-yellow-300"></p>
+      </div>
+
+      <p id="detail" class="text-lg font-semibold text-purple-700"></p>
+      <p class="league text-xl font-bold text-yellow-300 mt-2"></p>
+      <p class="score text-md font-medium text-gray-300"></p>
+
+      <button
+        id="reset-btn"
+        class="mt-6 bg-gray-700 hover:bg-gray-600 transition text-white px-6 py-3 rounded shadow border border-gray-400 uppercase tracking-wide"
+      >
+        Reset Game
+      </button>
+    </div>
+  </body>
+</html>
